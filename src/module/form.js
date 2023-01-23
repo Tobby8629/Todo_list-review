@@ -53,7 +53,6 @@ const form = () => {
     todo.changecomplete(check, get);
 
     more(todo);
-
     const remove = document.querySelectorAll('#trash');
     remove.forEach((re, index) => re.addEventListener('click', () => {
       const very = index;
@@ -64,8 +63,7 @@ const form = () => {
     }));
   });
 
-  const clean = document.querySelector('#clear');
-
+  const clean = document.querySelector('#clear'); 
   clean.addEventListener('click', () => {
     todo.clear();
     todo.changeindex();
