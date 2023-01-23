@@ -63,7 +63,7 @@ const form = () => {
     }));
   });
 
-  const clean = document.querySelector('#clear'); 
+  const clean = document.querySelector('#clear');
   clean.addEventListener('click', () => {
     todo.clear();
     todo.changeindex();
